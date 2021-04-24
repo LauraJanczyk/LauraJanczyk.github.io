@@ -1,1 +1,282 @@
+<!DOCTYPE html>
+<html lang= "pl-PL">
+<head>
+<meta charset="UTF-8"> <!--Polskie znaki-->
+<title>GOOGLE</title>
+</head>
+<style>
 
+html, body {
+  font-family: arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#wrapper {
+  min-height: 100%
+}
+#sign_in {
+  background: #4887ef; 
+  margin-right: 25px;
+  padding: 7px 15px;
+  border-radius: 3px; 
+  
+}
+
+.nav-links {
+  color: #404040;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  
+}
+
+li.nav-links a:hover {
+  text-decoration: underline;
+}
+
+#sign_in:hover { 
+  box-shadow: 1px 1px 5px #999;
+}
+
+#sign_in {
+  color: #fff;
+}
+
+
+#content {
+  padding-top: 170px;
+  padding-bottom: 40px;
+  width: 584px;
+  margin: 0 auto;
+}
+
+#logo {
+  background-image: url('logo.png');
+  background-size: 272px auto;
+  background-repeat: no-repeat;
+
+  width:280px;
+  height: 92px;
+
+  display: table-cell;
+  text-align: right;
+  vertical-align: bottom;
+}
+
+#country {
+  color: #4285F4;
+}
+
+#search-box {
+  margin-top: 30px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #D9D9D9;
+  padding: 0 10px;
+  border-radius: 20px;
+}
+
+input#search-box:focus {
+  border-color: #4D90FE;
+  outline: none;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+#button-container {
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+    
+}
+
+input[type="submit"] {
+  background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
+  border-radius: 2px;
+  color: #585858;
+  font-size: 13px;
+  min-width: 54px;
+  padding: 7px 16px;
+  margin: 0 2px;
+}
+
+input[type="submit"]:hover {
+  border-color: #C6C6C6;
+  background-color: #F8F8F8;
+  color: #222;
+}
+
+/* Header */
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#header > ul {
+  padding: 15px;
+  overflow: hidden;
+  float: right;
+  height: 30px;
+}
+
+#header > ul > li {
+  float: left;
+  margin: 0 10px;
+  font-size: 12px;
+}
+
+#user {
+  opacity: 0.55;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#apps {
+  background-image: url("https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
+  background-size: 528px 68px;
+}
+
+#apps {
+  width: 30px;
+  height: 30px;
+  background-position: -132px -38px;
+  opacity: 0.55;
+}
+
+
+#apps:hover {
+  opacity: 1;
+}
+
+
+
+#user-menu {
+  display: flex;
+  align-items: center;
+  background-color: #C2185B;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+#user-initial {
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+}
+
+
+
+#footer {
+  background-color: #F2F2F2;
+  border-top: 1px solid #E4E4E4;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 8px;
+}
+
+#footer ul {
+  height: 100%;
+}
+
+#footer li {
+  padding-left: 27px;
+  font-size: small;
+}
+
+#footer li a {
+  color: #666;
+}
+
+#footer-left {
+  float: left;
+}
+
+#footer-right {
+  float: right;
+  padding-right: 27px;
+} 
+</style>
+    
+<body>
+    
+  <html>
+  <head>
+    <title>Google</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <ul>
+          <li><a href="#">Gmail</a></li>
+          <li><a href="#">Images</a></li>
+          <li id="apps"></li> 
+          <li id="sign_in"><a href="#">Zaloguj się</a></li>
+          
+        </ul>
+      </div>
+      <div id="content">
+        <center>
+          <div id="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+          </div>
+        </center>
+
+        <form id="search-form">
+          <center>
+            <input type="text" name="search" id="search-box">
+            <div id="button-container">
+              <input type="submit" value="Szukaj w Google">
+              <input type="submit" value="Szczęśliwy traf">
+            </div>
+          </center>
+        </form>
+      </div>
+      <div id="footer">
+        <div id="footer-up">
+
+        </div>
+        <div id="footer-left">
+          <ul>
+            <li><a href="#">O nas</a></li>
+            <li><a href="#">Reklamuj się</a></li>
+            <li><a href="#">Dla firm</a></li>
+            <li><a href="#">Jak działa wyszukiwarka</a></li>
+          </ul>
+        </div>
+        <div id="footer-right">
+          <ul>
+            <li><a href="#">Prywatność</a></li>
+            <li><a href="#">Warunki</a></li>
+            <li><a href="#">Ustawienia</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+        
+</body>
+    
+</html>
