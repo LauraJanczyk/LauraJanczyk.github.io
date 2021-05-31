@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+<!--Laura Janczyk-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,29 +12,30 @@
     <script src="https://kit.fontawesome.com/ffc589d0fc.js" crossorigin="anonymous"></script>
 </head>
 <style>
-    {
-        margin: 0;
+    html, body {
         padding: 0;
+        margin: 0;
+        height: 100%;
         box-sizing: border-box;
-        font-family: 'arial', sense-serif;
+        font-family: arial, sense-serif;
     }
 
     section {
-        position: relative;
         width: 100%;
         display: flex;
-        justify-content: center;
+        position: relative;
         align-items: center;
+        justify-content: center;
         min-height: 100vh;
     }
 
         section header {
             position: absolute;
-            top: 0;
             width: 100%;
             display: flex;
-            justify-content: flex-end;
+            top: 0;
             padding: 20px;
+            justify-content: flex-end;
         }
 
             section header ul {
@@ -49,16 +51,17 @@
 
                     section header ul li a {
                         list-style: none;
-                        margin-left: 20px;
                         font-size: 13px;
+                        margin-left: 20px;
+                        
                     }
 
                     section header ul li button {
                         background: #4584ef;
+                        color: white;
                         border: none;
                         outline: none;
                         padding: 8px 14px;
-                        color: white;
                         font-size: 14px;
                         font-weight: 700;
                         border-radius: 3px;
@@ -68,14 +71,14 @@
         section .main {
             width: 580px;
             display: flex;
-            flex-direction: column;
             align-items: center;
+            flex-direction: column;
             justify-content: center;
         }
 
             section .main .searchBox {
-                position: relative;
                 width: 100%;
+                position: relative;
                 margin-top: 20px;
             }
 
@@ -112,7 +115,7 @@
                     font-size: 14px;
                     border: none;
                     cursor: pointer;
-                    border-radius: 4px;
+                    border-radius: 3px;
                     border: 1px solid transparent;
                 }
 
@@ -160,15 +163,15 @@
         display: none;
     }
 
-    .home .searchresult {
+    .home .wynikiwyszukiwania {
         display: none;
     }
 
-    .home #searchresultsnumber {
+    .home #liczbawyszukiwan {
         display: none;
     }
 
-    .home .relatedsearches {
+    .home .powiazanewyniki {
         display: none;
     }
 
@@ -188,7 +191,7 @@
                     <ul>
                         <li><a href="#">Gmail</a></li>
                         <li><a href="#">Zdjęcia</a></li>
-                        <li><a href="#"><img src="bars.png" alt=""></a></li>
+                        <li><a href="#"><img src="kropki.png" alt=""></a></li>
                         <li><button> Zaloguj się</button></li>
                     </ul>
                 </header>
@@ -201,8 +204,8 @@
                         {{googleSearch}}
 
                         <div class="icons">
-                            <div><img src="search.png"></div>
-                            <div><img src="keyboard.png"></div>
+                            <div><img src="lupa.png"></div>
+                            <div><img src="klawiatura.png"></div>
                         </div>
 
                     </div>
@@ -244,7 +247,7 @@
 
             <div id="header">
                 <div id="topbar">
-                    <img id="searchbarimage" src="logo.png" />
+                    <img id="searchbarimage" src="logo.png" />   
                     <div id="searchbar" type="text">
                         <input id="searchbartext" type="text" value="jakiś wynik" />
 
@@ -255,7 +258,7 @@
                         </button>
 
                         <button id="searchbarkeyboard">
-                            <img src="keyboard.png" />
+                            <img src="klawiatura.png" />
                         </button>
 
                         <button id="searchbarbutton">
@@ -286,8 +289,8 @@
                     </ul>
                 </div>
             </div>
-            <div id="searchresultsarea">
-                <p id="searchresultsnumber">Około 137,000 wyników (0.42 s) </p>
+            <div id="wyszukiwanie">
+                <p id="liczbawyszukiwan">Około 137,000 wyników (0.42 s) </p>
                 <div class="searchresult" style="margin-top:30px;">
                     <a href="https://www.google.com/search?q=jaki%C5%9B+wunik+google&sxsrf=ALeKk034keCFyPeQ9A0a8ClLMtTiBIRYMw%3A1621452981591&ei=tWilYOyuI4e5ggfbmrzgCw&oq=jaki%C5%9B+wunik+google&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABUNgQWLgZYLkaaABwAngAgAG-AogB6gSSAQMzLTKYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=gws-wiz&ved=0ahUKEwis3fKHv9bwAhWHnOAKHVsND7wQ4dUDCA4&uact=5">
                         support.google.com<span style="color:gray"> > websearch > answer</span><button>▼</button>
@@ -296,7 +299,7 @@
                     <p>Wyniki z Twoich usług Google są prywatne. Twoich informacji nie zobaczy w swoich wynikach nikt inny, chyba że na to pozwolisz lub udostępnisz te dane ...</p>
                 </div>
 
-                <div class="searchresult" style="margin-top:30px;">
+                <div class="wynikiwyszukiwania" style="margin-top:30px;">
                     <a href="https://www.google.com/search?q=jaki%C5%9B+wunik+google&sxsrf=ALeKk034keCFyPeQ9A0a8ClLMtTiBIRYMw%3A1621452981591&ei=tWilYOyuI4e5ggfbmrzgCw&oq=jaki%C5%9B+wunik+google&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABUNgQWLgZYLkaaABwAngAgAG-AogB6gSSAQMzLTKYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=gws-wiz&ved=0ahUKEwis3fKHv9bwAhWHnOAKHVsND7wQ4dUDCA4&uact=5">
                         support.google.com<span style="color:gray"> > websearch > answer</span><button>▼</button>
                         <h2>Zawężanie wyników wyszukiwania-Wyszukiwarka Google...</h2>
@@ -304,7 +307,7 @@
                     <p>Wyniki z Twoich usług Google są prywatne. Twoich informacji nie zobaczy w swoich wynikach nikt inny, chyba że na to pozwolisz lub udostępnisz te dane ...</p>
                 </div>
 
-                <div class="searchresult" style="margin-top:30px;">
+                <div class="wynikiwyszukiwania" style="margin-top:30px;">
                     <a href="https://www.google.com/search?q=jaki%C5%9B+wunik+google&sxsrf=ALeKk034keCFyPeQ9A0a8ClLMtTiBIRYMw%3A1621452981591&ei=tWilYOyuI4e5ggfbmrzgCw&oq=jaki%C5%9B+wunik+google&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABUNgQWLgZYLkaaABwAngAgAG-AogB6gSSAQMzLTKYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=gws-wiz&ved=0ahUKEwis3fKHv9bwAhWHnOAKHVsND7wQ4dUDCA4&uact=5">
                         support.google.com<span style="color:gray"> > websearch > answer</span><button>▼</button>
                         <h2>Sprawdzanie wyników wyszukiwania podrózy przez Gmaila ...</h2>
@@ -312,7 +315,7 @@
                     <p>Wyniki z Twoich usług Google są prywatne. Twoich informacji nie zobaczy w swoich wynikach nikt inny, chyba że na to pozwolisz lub udostępnisz te dane ...</p>
                 </div>
 
-                <div class="searchresult" style="margin-top:30px;">
+                <div class="wynikiwyszukiwania" style="margin-top:30px;">
                     <a href="https://www.google.com/search?q=jaki%C5%9B+wunik+google&sxsrf=ALeKk034keCFyPeQ9A0a8ClLMtTiBIRYMw%3A1621452981591&ei=tWilYOyuI4e5ggfbmrzgCw&oq=jaki%C5%9B+wunik+google&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABUNgQWLgZYLkaaABwAngAgAG-AogB6gSSAQMzLTKYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=gws-wiz&ved=0ahUKEwis3fKHv9bwAhWHnOAKHVsND7wQ4dUDCA4&uact=5">
                         support.google.com<span style="color:gray"> > websearch > answer</span><button>▼</button>
                         <h2>14 sposobów wyszukiwania w Google, których 95% z Was nie ...</h2>
@@ -321,7 +324,7 @@
 
                 </div>
 
-                <div class="searchresult" style="margin-top:30px;">
+                <div class="wynikiwyszukiwania" style="margin-top:30px;">
                     <a href="https://www.google.com/search?q=jaki%C5%9B+wunik+google&sxsrf=ALeKk034keCFyPeQ9A0a8ClLMtTiBIRYMw%3A1621452981591&ei=tWilYOyuI4e5ggfbmrzgCw&oq=jaki%C5%9B+wunik+google&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABUNgQWLgZYLkaaABwAngAgAG-AogB6gSSAQMzLTKYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=gws-wiz&ved=0ahUKEwis3fKHv9bwAhWHnOAKHVsND7wQ4dUDCA4&uact=5">
                         support.google.com<span style="color:gray"> > websearch > answer</span><button>▼</button>
                         <h2>Wyniki wyszukiwań Google – skąd takie rozbieżności?</h2>
@@ -329,7 +332,7 @@
                     <p>Otóż inaczej będą prezentować się wyniki wyszukiwania po wpisaniu tej samej frazy przez ... Google przechwytuje adres IP i za jego pomocą generuje wyniki, np. po wpisaniu frazy ... Jaki jest koszt pozycjonowania sklepu?</p>
                 </div>
 
-                <div class="searchresult" style="margin-top:30px;">
+                <div class="wynikiwyszukiwania" style="margin-top:30px;">
                     <a href="https://www.google.com/search?q=jaki%C5%9B+wunik+google&sxsrf=ALeKk034keCFyPeQ9A0a8ClLMtTiBIRYMw%3A1621452981591&ei=tWilYOyuI4e5ggfbmrzgCw&oq=jaki%C5%9B+wunik+google&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABUNgQWLgZYLkaaABwAngAgAG-AogB6gSSAQMzLTKYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=gws-wiz&ved=0ahUKEwis3fKHv9bwAhWHnOAKHVsND7wQ4dUDCA4&uact=5">
                         support.google.com<span style="color:gray"> > websearch > answer</span><button>▼</button>
                         <h2>Wyniki wyszukiwania Google: 10 przykładów - Agencja ...</h2>
@@ -337,7 +340,7 @@
                     <p> jest tego dużo, dużo więcej. Poznaj przykłady, w jaki sposób Google pomaga użytkownikom Internetu odnaleźć potrzebne wiadomości. Spis ...</p>
                 </div>
 
-                <div class="searchresult" style="margin-top:30px;">
+                <div class="wynikiwyszukiwania" style="margin-top:30px;">
                     <a href="https://www.google.com/search?q=jaki%C5%9B+wunik+google&sxsrf=ALeKk034keCFyPeQ9A0a8ClLMtTiBIRYMw%3A1621452981591&ei=tWilYOyuI4e5ggfbmrzgCw&oq=jaki%C5%9B+wunik+google&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABUNgQWLgZYLkaaABwAngAgAG-AogB6gSSAQMzLTKYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=gws-wiz&ved=0ahUKEwis3fKHv9bwAhWHnOAKHVsND7wQ4dUDCA4&uact=5">
                         support.google.com<span style="color:gray"> > websearch > answer</span><button>▼</button>
                         <h2>Sprawdzanie wyników wyszukiwania podrózy przez Gmaila ...</h2>
@@ -345,7 +348,7 @@
                     <p>Wyniki z Twoich usług Google są prywatne. Twoich informacji nie zobaczy w swoich wynikach nikt inny, chyba że na to pozwolisz lub udostępnisz te dane ...</p>
                 </div>
 
-                <div class="searchresult" style="margin-top:30px;">
+                <div class="wynikiwyszukiwania" style="margin-top:30px;">
                     <a href="https://www.google.com/search?q=jaki%C5%9B+wunik+google&sxsrf=ALeKk034keCFyPeQ9A0a8ClLMtTiBIRYMw%3A1621452981591&ei=tWilYOyuI4e5ggfbmrzgCw&oq=jaki%C5%9B+wunik+google&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABUNgQWLgZYLkaaABwAngAgAG-AogB6gSSAQMzLTKYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=gws-wiz&ved=0ahUKEwis3fKHv9bwAhWHnOAKHVsND7wQ4dUDCA4&uact=5">
                         support.google.com<span style="color:gray"> > websearch > answer</span><button>▼</button>
                         <h2>Rodzaje wyników wyszukiwania Google - ponad 20</h2>
@@ -353,7 +356,7 @@
                     <p>Jeśli wciąż nie wiesz czym są rich snippets, wyniki lokalne, knowledge panel lub ... Rodzaje wyników wyszukiwania Google wzbogacono jakiś czas temu o ...</p>
                 </div>
 
-                <div class="searchresult" style="margin-top:30px;">
+                <div class="wynikiwyszukiwania" style="margin-top:30px;">
                     <a href="https://www.google.com/search?q=jaki%C5%9B+wunik+google&sxsrf=ALeKk034keCFyPeQ9A0a8ClLMtTiBIRYMw%3A1621452981591&ei=tWilYOyuI4e5ggfbmrzgCw&oq=jaki%C5%9B+wunik+google&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABUNgQWLgZYLkaaABwAngAgAG-AogB6gSSAQMzLTKYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=gws-wiz&ved=0ahUKEwis3fKHv9bwAhWHnOAKHVsND7wQ4dUDCA4&uact=5">
                         support.google.com<span style="color:gray"> > websearch > answer</span><button>▼</button>
                         <h2>Jak działa wyszukiwarka Google | Algorytmy wyszukiwania</h2>
@@ -361,27 +364,28 @@
                     <p>Dowiedz się, w jaki sposób algorytmy wyszukiwania Google znajdują najbardziej trafne wyniki za pomocą metod takich jak analiza słów w wyszukiwanym haśle ...</p>
                 </div>
 
-                <div class="searchresult" style="margin-top:30px;">
+                <div class="wynikiwyszukiwania" style="margin-top:30px;">
                     <a href="https://www.google.com/search?q=jaki%C5%9B+wunik+google&sxsrf=ALeKk034keCFyPeQ9A0a8ClLMtTiBIRYMw%3A1621452981591&ei=tWilYOyuI4e5ggfbmrzgCw&oq=jaki%C5%9B+wunik+google&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABUNgQWLgZYLkaaABwAngAgAG-AogB6gSSAQMzLTKYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=gws-wiz&ved=0ahUKEwis3fKHv9bwAhWHnOAKHVsND7wQ4dUDCA4&uact=5">
                         support.google.com<span style="color:gray"> > websearch > answer</span><button>▼</button>
                         <h2>Krytycy ganią Google'a za nowy wygląd wyników wyszukiwania</h2>
                     </a>
                     <p> Google co jakiś czas eksperymentuje z tym, jak wyglądają jego wyniki wyszukiwania i w jaki sposób odróżniają się od nich reklamy. Trudno.</p>
                 </div>
-                <div class="relatedsearches">
+                <div class="powiazanewyniki">
                     <h3>Podobne wyszukiwania</h3>
-                    <div class="relatedlists">
-                        <ul class="relatedleft">
+                    <div class="powiazania">
+                        <ul class="powiazania1">
                             <li>Wynik <b>test</b></li>
-                            <li><b>Googlle</b> kla</li>
-                            <li><b>Googlee</b> tra</li>
-                            <li><b>Guugle</b> ma</li>
+                            <li><b>Googgle</b> kla</li>
+                            <li><b>Googee</b> tra</li>
+                            <li><b>Gougle</b> ma</li>
                         </ul>
-                        <ul class="relatedright">
+                        <ul class="powiazania2">
                             <li><b>AGH</b> w rankingach</li>
+                            <li><b>AGH</b> rekrutacja</li>
                             <li>Adres e-mail <b>AGH</b></li>
                             <li><b>AGH</b> najlepszą uczelnią</li>
-                            <li><b>AGH</b> rekrutacja</li>
+                       
                         </ul>
                     </div>
                 </div>
@@ -408,20 +412,20 @@
                         <td><span class="blue"><i class="fas fa-angle-right" style="color:#4285f4; font-size:20px"></i></span></td>
                     </tr>
                     <tr>
-                        <td class="pageNumber"></td>
-                        <td class="pageNumber"></td>
-                        <td class="pageNumber">1</td>
-                        <td class="pageNumber">2</td>
-                        <td class="pageNumber">3</td>
-                        <td class="pageNumber">4</td>
-                        <td class="pageNumber">5</td>
-                        <td class="pageNumber">6</td>
-                        <td class="pageNumber">7</td>
-                        <td class="pageNumber">8</td>
-                        <td class="pageNumber">9</td>
-                        <td class="pageNumber">10</td>
+                        <td class="numerStrony"></td>
+                        <td class="numerStrony"></td>
+                        <td class="numerStrony">1</td>
+                        <td class="numerStrony">2</td>
+                        <td class="numerStrony">3</td>
+                        <td class="numerStrony">4</td>
+                        <td class="numerStrony">5</td>
+                        <td class="numerStrony">6</td>
+                        <td class="numerStrony">7</td>
+                        <td class="numerStrony">8</td>
+                        <td class="numerStrony">9</td>
+                        <td class="numerStrony">10</td>
                         <td colspan="3"></td>
-                        <td class="pageNumber">Następna</td>
+                        <td class="numerStrony">Następna</td>
                     </tr>
                 </table>
             </div>
